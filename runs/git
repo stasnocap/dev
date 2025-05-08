@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sudo pacman -S git
+
+git config --global user.name stasnocap
+git config --global user.email stasnocap@gmail.com
+git config --global core.editor nvim
