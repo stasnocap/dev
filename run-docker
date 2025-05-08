@@ -1,0 +1,2 @@
+docker build -t arch-dev .
+docker run --rm -it arch-dev

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+sudo pacman -S git zsh --noconfirm
+
+# work
+git config --global http.sslVerify false
+
+hash -r
+
+yes | RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
