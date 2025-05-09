@@ -3,8 +3,10 @@
 git submodule init
 git submodule update
 pushd env/.config/nvim
+git remote set-url origin git@github.com:stasnocap/config.nvim.git
 git checkout main
 popd
 pushd xkb
+git remote set-url origin git@github.com:stasnocap/BigBagKbdTrixXKB.git
 git checkout master
 popd

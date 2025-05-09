@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --noconfirm --needed playerctl pavucontrol telegram-desktop
+sudo yay -S --noconfirm --needed hyprshot
+
