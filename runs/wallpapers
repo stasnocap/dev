@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/stasnocap/wallpapers $HOME/wallpapers
+
+cp ./wallpaper-randomizer/*  $HOME/.config/systemd/user/
+
+systemctl --user enable wallpaper-randomizer.timer
+systemctl --user start wallpaper-randomizer.timer

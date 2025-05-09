@@ -1,19 +1,15 @@
-# Do I need it?
-#source /usr/share/doc/fzf/examples/key-bindings.zsh
-#source /usr/share/doc/fzf/examples/completion.zsh
-
 export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
 
-PERSONAL=$XDG_CONFIG_HOME/personal
 DEV_ENV=$HOME/dev
-for i in `find -L $PERSONAL`; do
-    source $i
-done
 
 ## All that sweet sweet fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+export EDITOR=$VIM
 export GIT_EDITOR=$VIM
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export DEV_ENV_HOME="$HOME/personal/dev"
