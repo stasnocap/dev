@@ -10,3 +10,5 @@ pushd xkb
 git remote set-url origin git@github.com:stasnocap/BigBagKbdTrixXKB.git
 git checkout master
 popd
+
+git remote set-url origin git@github.com:stasnocap/dev.git
