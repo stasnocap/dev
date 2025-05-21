@@ -3,7 +3,7 @@
 sudo pacman -S --needed --noconfirm git zsh 
 
 # work
-git config --global http.sslVerify false
+# git config --global http.sslVerify false
 
 hash -r
 

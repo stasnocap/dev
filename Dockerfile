@@ -1,7 +1,7 @@
 FROM archlinux:latest
 
 # work
-RUN echo "Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+# RUN echo "Server = http://mirror.rackspace.com/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 
 RUN pacman -Sy --noconfirm \
     && pacman -S --noconfirm sudo
