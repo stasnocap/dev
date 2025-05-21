@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
 sudo pacman -S --needed --noconfirm nodejs npm
+
+# work
+sudo npm config set strict-ssl false
+
 sudo npm install -g typescript-language-server typescript vscode-langservers-extracted js-beautify
