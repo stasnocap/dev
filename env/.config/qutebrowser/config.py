@@ -24,3 +24,5 @@ config.bind('X', 'undo')
 c.hints.chars = 'arstgmneio'
 
 c.content.blocking.enabled = True
+
+# config.set("qt.force_software_rendering", "qt-quick")
