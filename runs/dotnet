@@ -6,3 +6,5 @@ wget https://dot.net/v1/dotnet-install.sh
 
 sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel STS -version latest
 sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel STS -version 8.0.409
+
+dotnet tool install -g csharpier
