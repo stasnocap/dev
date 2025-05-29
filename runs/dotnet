@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --needed --noconfirm wget
+curl -O https://dot.net/v1/dotnet-install.sh
 
-wget https://dot.net/v1/dotnet-install.sh
+chmod +x ./dotnet-install.sh
 
 sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel STS -version latest
 sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel STS -version 8.0.409
 
-dotnet tool install -g csharpier
+# do I need it?
+# dotnet tool install -g csharpier
+
+rm ./dotnet-install.sh
+
+sudo ln -s /usr/share/dotnet/dotnet /usr/local/bin/dotnet

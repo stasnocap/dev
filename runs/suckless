@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --needed --noconfirm libx11 libxft libxinemara ttf-dejavu
+
+cd $HOME
+
+git clone git://git.suckless.org/dwm
+cd dwm
+sudo make clean install
+
+git clone git://git.suckless.org/dmenu
+cd dmenu
+sudo make clean install
+
+git clone https://github.com/stasnocap/st
+cd st
+sudo make clean install
+
+cd $HOME/dev
