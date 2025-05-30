@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo cp -r ./xkb/xkb-data_xmod/xkb/* /usr/share/X11/xkb/
+./xkb/install-dreymar-xmod.sh

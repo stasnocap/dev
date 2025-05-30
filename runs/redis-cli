@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 sudo pacman -S --needed --noconfirm pkgconf jemalloc
-cd ~/work
 git clone https://github.com/redis/redis --depth 1
 cd redis
 make redis-cli
 sudo cp src/redis-cli /usr/local/bin/
-cd ~/dev
+
+cd ..
+rm -rf redis
