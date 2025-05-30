@@ -1,8 +1,0 @@
-[Unit]
-Description=Wallpaper Randomizer
-
-[Service]
-ExecStart=/home/stasnocap/.local/scripts/wallpaper-randomizer
-
-[Install]
-WantedBy=default.target
