@@ -4,7 +4,7 @@ sudo pacman -S --needed --noconfirm libx11 libxft libxinemara
 
 cd $HOME
 
-git clone git://git.suckless.org/dwm
+git clone https://github.com/stasnocap/dwm
 cd dwm
 sudo make clean install
 
