@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --noconfirm --needed pipewire pipewire-pulse playerctl pavucontrol telegram-desktop
+sudo pacman -S --noconfirm --needed xorg-server xorg-xinit xorg-xrandr xorg-xsetroot pipewire pipewire-pulse playerctl pavucontrol telegram-desktop
 
 systemctl --user enable pipewire pipewire-pulse
 systemctl --user start pipewire pipewire-pulse
