@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-curl -O https://dot.net/v1/dotnet-install.sh
+curl -LO https://dot.net/v1/dotnet-install.sh
 
 chmod +x ./dotnet-install.sh
 
