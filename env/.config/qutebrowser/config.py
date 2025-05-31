@@ -21,6 +21,9 @@ config.bind('m', 'scroll-page 0 0.5')
 config.bind('x', 'tab-close')
 config.bind('X', 'undo')
 
+config.bind('k', 'search-next')
+config.bind('K', 'search-prev')
+
 c.hints.chars = 'arstgmneio'
 
 c.content.blocking.enabled = True
