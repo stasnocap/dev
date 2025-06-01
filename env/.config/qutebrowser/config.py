@@ -19,12 +19,10 @@ config.bind('j', 'scroll-page 0 -0.5')
 config.bind('m', 'scroll-page 0 0.5')
 
 config.bind('x', 'tab-close')
-config.bind('X', 'undo')
+config.bind('z', 'undo')
 
 config.bind('k', 'search-next')
 config.bind('K', 'search-prev')
-
-config.unbind('<Ctrl-V>')
 
 config.bind('cD', 'yank domain -s')
 config.bind('cM', 'yank inline [{title}]({url:yank}) -s')
@@ -38,6 +36,14 @@ config.bind('ct', 'yank title')
 config.bind('cc', 'yank')
 config.bind(';C', 'hint links yank-primary')
 config.bind(';c', 'hint links yank')
+
+config.unbind('<Ctrl-V>')
+config.unbind('v')
+config.unbind('V')
+config.bind('VV', 'open -t -- {primary}')
+config.bind('Vv', 'open -t -- {clipboard}')
+config.bind('vV', 'open -- {primary}')
+config.bind('vv', 'open -- {clipboard}')
 
 c.hints.chars = 'arstgmneio'
 
