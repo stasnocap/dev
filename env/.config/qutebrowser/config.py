@@ -22,9 +22,22 @@ config.bind('x', 'tab-close')
 config.bind('X', 'undo')
 
 config.bind('k', 'search-next')
-config.bind('K', 'search-pre')
+config.bind('K', 'search-prev')
 
 config.unbind('<Ctrl-V>')
+
+config.bind('cD', 'yank domain -s')
+config.bind('cM', 'yank inline [{title}]({url:yank}) -s')
+config.bind('cP', 'yank pretty-url -s')
+config.bind('cT', 'yank title -s')
+config.bind('cC', 'yank -s')
+config.bind('cd', 'yank domain')
+config.bind('cm', 'yank inline [{title}]({url:yank})')
+config.bind('cp', 'yank pretty-url')
+config.bind('ct', 'yank title')
+config.bind('cc', 'yank')
+config.bind(';C', 'hint links yank-primary')
+config.bind(';c', 'hint links yank')
 
 c.hints.chars = 'arstgmneio'
 
