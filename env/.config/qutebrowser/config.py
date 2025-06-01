@@ -24,6 +24,8 @@ config.bind('X', 'undo')
 config.bind('k', 'search-next')
 config.bind('K', 'search-pre')
 
+config.unbind('<Ctrl-V>')
+
 c.hints.chars = 'arstgmneio'
 
 c.content.blocking.enabled = True
