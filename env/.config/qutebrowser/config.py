@@ -22,10 +22,22 @@ config.bind('x', 'tab-close')
 config.bind('X', 'undo')
 
 config.bind('k', 'search-next')
-config.bind('K', 'search-prev')
+config.bind('K', 'search-pre')
 
 c.hints.chars = 'arstgmneio'
 
 c.content.blocking.enabled = True
 
-# config.set("qt.force_software_rendering", "qt-quick")
+# catpuccin
+import os
+from urllib.request import urlopen
+
+if not os.path.exists(config.configdir / "theme.py"):
+    theme = "https://raw.githubusercontent.com/catppuccin/qutebrowser/main/setup.py"
+    with urlopen(theme) as themehtml:
+        with open(config.configdir / "theme.py", "a") as file:
+            file.writelines(themehtml.read().decode("utf-8"))
+
+if os.path.exists(config.configdir / "theme.py"):
+    import theme
+    theme.setup(c, 'latte', True)
