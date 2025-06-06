@@ -15,3 +15,6 @@ dotnet tool install --global dotnet-ef
 rm ./dotnet-install.sh
 
 sudo ln -s /usr/share/dotnet/dotnet /usr/local/bin/dotnet
+
+echo "fs.inotify.max_user_instances=8192" | sudo tee /etc/sysctl.d/99-max-inotify.conf
+echo "fs.inotify.max_user_watches=1048576" | sudo tee /etc/sysctl.d/99-max-inotify.conf
