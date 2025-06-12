@@ -6,7 +6,7 @@ git commit -m 'automated dev commit'
 git push
 popd
 
-pushd ~/dev/env/.config/xkb
+pushd ~/dev/xkb
 git add .
 git commit -m 'automated dev commit'
 git push
