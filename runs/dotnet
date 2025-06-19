@@ -11,6 +11,8 @@ sudo ./dotnet-install.sh --install-dir /usr/share/dotnet -channel STS -version 8
 # dotnet tool install -g csharpier
 
 dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-outdated-tool
+dotnet tool install --global dotnet-search
 
 rm ./dotnet-install.sh
 
