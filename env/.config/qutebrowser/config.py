@@ -37,7 +37,8 @@ config.bind('cc', 'yank')
 config.bind(';C', 'hint links yank-primary')
 config.bind(';c', 'hint links yank')
 
-config.bind('M', 'hint links spawn mpv --force-window=immediate {hint-url}')
+config.bind('W', 'hint links spawn mpv --force-window=immediate --input-ipc-server=/tmp/mpv-socket {hint-url}')
+config.bind('P', 'hint links spawn mpv --force-window=immediate --input-ipc-server=/tmp/mpv-socket --ytdl-raw-options="yes-playlist=" {hint-url}')
 
 config.unbind('<Ctrl-V>')
 config.unbind('v')
