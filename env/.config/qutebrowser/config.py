@@ -37,6 +37,8 @@ config.bind('cc', 'yank')
 config.bind(';C', 'hint links yank-primary')
 config.bind(';c', 'hint links yank')
 
+config.bind('M', 'hint links spawn mpv --force-window=immediate {hint-url}')
+
 config.unbind('<Ctrl-V>')
 config.unbind('v')
 config.unbind('V')
