@@ -59,3 +59,4 @@ addToPath $HOME/.local/personal
 alias psql_nsi='psql -h 172.20.1.174 -p 15432 -U postgre_developer -d nsi-development'
 
 alias v='nvim'
+alias g='git status'
