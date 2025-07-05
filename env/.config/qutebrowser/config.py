@@ -39,7 +39,7 @@ config.bind(';c', 'hint links yank')
 
 config.bind('w', 'hint links spawn mpv --force-window=immediate --input-ipc-server=/tmp/mpv-socket --ytdl-format="bestvideo[height<=?2160]+bestaudio/best" {hint-url}')
 config.bind('a', 'hint links spawn bash -c "echo \'loadfile {hint-url} append\' | socat - /tmp/mpv-socket"')
-config.bind('p', 'hint links spawn mpv --force-window=immediate --input-ipc-server=/tmp/mpv-socket --ytdl-raw-options="yes-playlist=,format=bestvideo[height<=?2160]+bestaudio/best" {hint-url}')
+config.bind('W', 'hint links spawn mpv --force-window=immediate --input-ipc-server=/tmp/mpv-socket --ytdl-raw-options="yes-playlist=,format=bestvideo[height<=?2160]+bestaudio/best" {hint-url}')
 
 config.unbind('<Ctrl-V>')
 config.unbind('v')
