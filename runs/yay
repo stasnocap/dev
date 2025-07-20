@@ -7,3 +7,7 @@ makepkg -si --noconfirm
 
 cd ..
 rm -rf yay-bin
+
+
+# packages
+yay -Sy --needed --noconfirm brave-bin
