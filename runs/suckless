@@ -2,7 +2,10 @@
 
 sudo pacman -S --needed --noconfirm libx11 libxft libxinemara
 
-cd $HOME
+# check if error has gone
+hash -r
+
+cd $HOME/personal/
 
 git clone https://github.com/stasnocap/dwm
 cd dwm
@@ -18,4 +21,4 @@ git clone https://github.com/stasnocap/st
 cd st
 sudo make clean install
 
-cd $HOME/dev
+cd $HOME/personal/dev

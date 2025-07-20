@@ -4,7 +4,7 @@ xset -dpms
 xset s off
 
 xsetroot -solid "#eff1f5"
-source $HOME/dev/xkb/add-to-rc-file
+source $HOME/personal/dev/xkb/add-to-rc-file
 while true; do
     xsetroot -name "$(date)"
     sleep 2
