@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xsetroot playerctl pavucontrol telegram-desktop mpv yt-dlp
-
+sudo pacman -S --noconfirm --needed xorg-xrandr xorg-xsetroot playerctl pavucontrol telegram-desktop
 
 
