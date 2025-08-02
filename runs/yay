@@ -10,4 +10,4 @@ rm -rf yay-bin
 
 
 # packages
-yay -Sy --needed --noconfirm brave-bin
+yay -Sy --needed --noconfirm zen-browser-bin
