@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-pushd ~/dev/env/.config/nvim
+pushd ~/personal/dev/env/.config/nvim
 git add .
 git commit -m 'automated dev commit'
 git push
 popd
 
-pushd ~/dev/xkb
+pushd ~/personal/dev/xkb
 git add .
 git commit -m 'automated dev commit'
 git push
 popd
 
-pushd ~/dev
+pushd ~/personal/dev
 git add .
 git commit -m 'automated dev commit'
 git push
