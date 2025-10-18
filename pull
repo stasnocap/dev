@@ -1,0 +1,4 @@
+git pull --rebase
+pushd env/.config/nvim
+git pull --rebase
+popd
