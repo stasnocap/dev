@@ -68,3 +68,4 @@ copy $DEV_ENV/env/.zsh_profile $HOME/.zsh_profile
 copy $DEV_ENV/env/.zshrc $HOME/.zshrc
 copy $DEV_ENV/env/.profile $HOME/.profile
 copy $DEV_ENV/env/.tmux-sessionizer $HOME/.tmux-sessionizer
+copy $DEV_ENV/env/.emacs $HOME/.emacs
